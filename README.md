@@ -223,44 +223,6 @@ FPGA-Reaction-Time-Game/
 * Digital timing
 * Synchronous logic
 
-## How to Run
-
-1. Open the project in **Intel Quartus Prime 18.1**.
-2. Set `reaction_game` as the **Top-Level Entity**.
-3. Add:
-
-   * `reaction_game.vhd`
-   * `counter.vhd`
-4. Check the `.qsf` pin assignments for the DE10-Standard.
-5. Compile the project.
-6. Program the FPGA.
-7. Press `KEY0` to start the game.
-8. Wait for the LED to turn ON.
-9. Press `KEY0` as quickly as possible.
-10. Read the reaction time on the 7-segment displays.
-
-## Example
-
-If the player reacts after approximately 350 ms:
-
-```text
-HEX3 HEX2 HEX1 HEX0
-  0    3    5    0
-```
-
-Display:
-
-```text
-0350
-```
-
-If the player waits more than approximately 10 seconds:
-
-```text
-9999
-```
-
-is displayed until the next button press.
 
 ## Author
 
